@@ -38,15 +38,19 @@
 | | |
 |---|---|
 | **PC판 (Windows / Linux)** | [**HY 런처**](https://hyproj.com)로 설치 — 권장 |
-| **압축본 (수동)** | [Releases](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)의 `MOTP_<버전>_windows_x64.zip` / `MOTP_<버전>_linux_x64.tar.gz` — 풀어서 바로 실행 |
+| **압축본 (수동)** | [Releases](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)의 `MOTP_<버전>_<windows·macos·linux>_<x64·arm64>` — Windows는 `.zip`, macOS·Linux는 `.tar.gz`. 풀어서 바로 실행 |
 | **웹 데모 (프롤로그)** | v0.7.0 판에서 멈춘 채로 남아 있습니다 — [**hyproj.com/play/motp**](https://hyproj.com/play/motp/) |
 
 - **설치와 업데이트는 HY 런처가 맡습니다**(v0.7.0부터). 게임 안의 「업데이트 확인」은 없습니다.
   단독 설치본(EXE · MSI · DEB)은 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)이
   마지막이었습니다.
-- **런처 없이 받고 싶다면** v0.8.0부터 Releases에 압축본이 함께 올라갑니다. 푼 폴더 안의 `MOTP.exe`(Linux는
+- **런처 없이 받고 싶다면** v0.8.0부터 Releases에 압축본이 함께 올라갑니다. 푼 폴더 안의 `MOTP.exe`(macOS·Linux는
   `MOTP`)를 실행하면 세이브·모드·로그가 그 폴더 옆에 생깁니다. 업데이트는 새 압축본을 받아 `save/`·`mods/`를
   옮겨 주면 됩니다 — 이 일을 대신 해 주는 것이 런처입니다.
+- **v0.12.0부터 압축본이 여섯 벌입니다** — Windows · macOS · Linux 각각 x64와 arm64(Apple Silicon·Snapdragon
+  노트북·ARM Linux). 내 컴퓨터에 맞는 것을 받으면 됩니다.
+- **macOS판은 Apple 개발자 서명이 없습니다.** 브라우저로 받아 Finder에서 풀면 「확인되지 않은 개발자」라며 열리지
+  않으니, 한 번만 터미널에서 `xattr -dr com.apple.quarantine <푼 폴더>`를 실행한 뒤 그 안의 `MOTP`를 켜 주세요.
 - **웹 데모는 v0.7.0이 마지막 판입니다.** 프롤로그까지만 담겨 있고, 더 갱신되지 않습니다.
 - **PC판 게임은 인터넷이 필요 없습니다.** 설치 후 완전히 오프라인으로 끝까지 진행됩니다 — 정답
   확인도 바깥에 묻지 않습니다. 새 판이 나왔는지 보는 일은 이제 런처가 하고, 게임은 아무것도 묻지
@@ -56,10 +60,10 @@
 
 | | |
 |---|---|
-| 운영체제 | **Windows 10 / 11 (x64)** · **Linux x64** |
+| 운영체제 | **Windows 10 / 11** · **macOS 11 이상** · **Linux** — 각각 x64 · arm64 (런처는 Windows · Linux) |
 | 화면 | **전체화면 전용** · 1280×720 이상 |
 | 그래픽 | WebGPU 또는 WebGL2 — 설정에서 렌더러 API와 GPU를 고를 수 있습니다 |
-| 그 외 | Windows: Microsoft Edge WebView2 · Linux: WebKitGTK 4.1 + GStreamer 코덱 |
+| 그 외 | Windows: Microsoft Edge WebView2 · macOS: 시스템 WebKit · Linux: WebKitGTK 4.1 + GStreamer 코덱 |
 
 런처는 게임을 `사용자 폴더\HYLauncher\motp`(Linux는 `~/HYLauncher/motp`)에 설치하고, 처음
 실행하면 그 옆에 `save/` · `logs/` · `mods/`가 생깁니다.
@@ -170,7 +174,9 @@ Japanese are fully supported.
 Installing and updating is the launcher's job; **v0.7.0 was the last
 [standalone installer](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)** (EXE · MSI · DEB).
 From v0.8.0 each [release](https://github.com/inoyu4649/HYProject_MOTP/releases/latest) also carries a plain
-`.zip` (Windows) / `.tar.gz` (Linux) — unpack and run, no launcher needed.
+`.zip` (Windows) / `.tar.gz` (macOS · Linux) — unpack and run, no launcher needed. From v0.12.0 there are six of them:
+Windows, macOS and Linux, each for x64 and arm64. The macOS build isn't signed by an Apple developer ID — after
+unpacking, run `xattr -dr com.apple.quarantine <folder>` once in Terminal, then start `MOTP`.
 The browser demo (prologue only) stays frozen at v0.7.0: [**hyproj.com/play/motp**](https://hyproj.com/play/motp/). Saves from a standalone install aren't shared automatically —
 copy the files from its `save/` folder into the launcher install's `save/` to carry on.
 
@@ -211,7 +217,9 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 インストールと更新はランチャーが担います。**単体インストーラーは
 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)が最後**（EXE・MSI・DEB）でした。
 v0.8.0からは[リリース](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)に `.zip`（Windows）/
-`.tar.gz`（Linux）も並びます — 展開してそのまま起動でき、ランチャーは要りません。
+`.tar.gz`（macOS・Linux）も並びます — 展開してそのまま起動でき、ランチャーは要りません。v0.12.0からはWindows・
+macOS・Linuxそれぞれのx64版とarm64版、計六種です。macOS版はApple開発者署名がないため、展開後に一度だけ
+ターミナルで `xattr -dr com.apple.quarantine <フォルダ>` を実行してから `MOTP` を起動してください。
 ブラウザ版デモ（プロローグまで）はv0.7.0のまま更新されません: [**hyproj.com/play/motp**](https://hyproj.com/play/motp/)。単体版のセーブは自動では引き継がれません — その `save/`
 フォルダのファイルをランチャー版の `save/` へ移せば続きから遊べます。
 
