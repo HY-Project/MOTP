@@ -1,5 +1,5 @@
 <!--
-  이 파일은 **공개 저장소 `inoyu4649/HYProject_MOTP`의 `README.md`로 올릴 원고**다.
+  이 파일은 **공개 저장소 `HY-Project/MOTP`의 `README.md`로 올릴 원고**다.
   (이 저장소 — 코드가 있는 비공개 쪽 — 에서는 원고이자 정본이다.)
 
   **손으로 옮기지 않는다.** `npm run build:public-repo`가 공개 저장소에 올릴 한 벌을
@@ -38,11 +38,11 @@
 | | |
 |---|---|
 | **PC판 (Windows / Linux)** | [**HY 런처**](https://hyproj.com)로 설치 — 권장 |
-| **압축본 (수동)** | [Releases](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)의 `MOTP_<버전>_<windows·macos·linux>_<x64·arm64>` — Windows는 `.zip`, macOS·Linux는 `.tar.gz`. 풀어서 바로 실행 |
+| **압축본 (수동)** | [Releases](https://github.com/HY-Project/MOTP/releases/latest)의 `MOTP_<버전>_<windows·macos·linux>_<x64·arm64>` — Windows는 `.zip`, macOS·Linux는 `.tar.gz`. 풀어서 바로 실행 |
 | **웹 데모 (프롤로그)** | v0.7.0 판에서 멈춘 채로 남아 있습니다 — [**hyproj.com/play/motp**](https://hyproj.com/play/motp/) |
 
 - **설치와 업데이트는 HY 런처가 맡습니다**(v0.7.0부터). 게임 안의 「업데이트 확인」은 없습니다.
-  단독 설치본(EXE · MSI · DEB)은 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)이
+  단독 설치본(EXE · MSI · DEB)은 [v0.7.0](https://github.com/HY-Project/MOTP/releases/tag/v0.7.0)이
   마지막이었습니다.
 - **런처 없이 받고 싶다면** v0.8.0부터 Releases에 압축본이 함께 올라갑니다. 푼 폴더 안의 `MOTP.exe`(macOS·Linux는
   `MOTP`)를 실행하면 세이브·모드·로그가 그 폴더 옆에 생깁니다. 업데이트는 새 압축본을 받아 `save/`·`mods/`를
@@ -153,7 +153,7 @@ PC판은 **모드를 지원합니다.** 게임 폴더의 `mods/`에 폴더를 �
 여기는 **배포용 저장소**입니다 — 설치본(릴리스)과 이 안내문이 있습니다. 게임 소스 코드는 별도의
 비공개 저장소에서 관리합니다.
 
-버그 제보나 문의는 **[Issues](https://github.com/inoyu4649/HYProject_MOTP/issues)**에 남겨 주세요.
+버그 제보나 문의는 **[Issues](https://github.com/HY-Project/MOTP/issues)**에 남겨 주세요.
 제보할 때 **버전**(타이틀 화면 왼쪽 아래에 적혀 있습니다)과 **`logs/` 폴더의 최신 로그**를 함께
 주시면 가장 빠릅니다.
 
@@ -172,8 +172,8 @@ Japanese are fully supported.
 **Play** — Windows / Linux: install through the [**HY Launcher**](https://hyproj.com)
 (Windows 10/11 x64 or Linux x64, fullscreen, **fully offline** after installation.)
 Installing and updating is the launcher's job; **v0.7.0 was the last
-[standalone installer](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)** (EXE · MSI · DEB).
-From v0.8.0 each [release](https://github.com/inoyu4649/HYProject_MOTP/releases/latest) also carries a plain
+[standalone installer](https://github.com/HY-Project/MOTP/releases/tag/v0.7.0)** (EXE · MSI · DEB).
+From v0.8.0 each [release](https://github.com/HY-Project/MOTP/releases/latest) also carries a plain
 `.zip` (Windows) / `.tar.gz` (macOS · Linux) — unpack and run, no launcher needed. From v0.12.0 there are six of them:
 Windows, macOS and Linux, each for x64 and arm64. The macOS build isn't signed by an Apple developer ID — after
 unpacking, run `xattr -dr com.apple.quarantine <folder>` once in Terminal, then start `MOTP`.
@@ -200,7 +200,7 @@ Font and open-source licenses ship in the `docs/` folder of the installed game a
 in-game credits.
 
 This repository hosts **releases and this page**; the source lives in a separate private repository.
-Bug reports go to [Issues](https://github.com/inoyu4649/HYProject_MOTP/issues) — please include the
+Bug reports go to [Issues](https://github.com/HY-Project/MOTP/issues) — please include the
 version (shown at the bottom-left of the title screen) and the newest file from `logs/`.
 The game is in **Early Access**: `0.x` means there's more to add, not that it's unfinished to play.
 
@@ -215,8 +215,8 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 **プレイ** — Windows / Linux版は [**HY ランチャー**](https://hyproj.com) からインストール
 （Windows 10/11 x64またはLinux x64・全画面専用・インストール後は**完全オフライン**で進行します。）
 インストールと更新はランチャーが担います。**単体インストーラーは
-[v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)が最後**（EXE・MSI・DEB）でした。
-v0.8.0からは[リリース](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)に `.zip`（Windows）/
+[v0.7.0](https://github.com/HY-Project/MOTP/releases/tag/v0.7.0)が最後**（EXE・MSI・DEB）でした。
+v0.8.0からは[リリース](https://github.com/HY-Project/MOTP/releases/latest)に `.zip`（Windows）/
 `.tar.gz`（macOS・Linux）も並びます — 展開してそのまま起動でき、ランチャーは要りません。v0.12.0からはWindows・
 macOS・Linuxそれぞれのx64版とarm64版、計六種です。macOS版はApple開発者署名がないため、展開後に一度だけ
 ターミナルで `xattr -dr com.apple.quarantine <フォルダ>` を実行してから `MOTP` を起動してください。
@@ -241,6 +241,6 @@ macOS・Linuxそれぞれのx64版とarm64版、計六種です。macOS版はApp
 フォルダ、およびゲーム内のクレジット画面にあります。
 
 このリポジトリは**配布（リリース）用**で、ソースコードは別の非公開リポジトリにあります。
-不具合のご報告は [Issues](https://github.com/inoyu4649/HYProject_MOTP/issues) へ —
+不具合のご報告は [Issues](https://github.com/HY-Project/MOTP/issues) へ —
 **バージョン**（タイトル画面の左下）と **`logs/` の最新ログ**を添えていただけると助かります。
 本作は **Early Access** です。`0.x` は「まだ足すものが残っている」という意味です。
